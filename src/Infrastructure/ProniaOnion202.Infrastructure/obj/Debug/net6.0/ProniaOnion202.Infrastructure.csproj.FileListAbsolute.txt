@@ -1,0 +1,11 @@
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\bin\Debug\net6.0\ProniaOnion202.Infrastructure.deps.json
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\bin\Debug\net6.0\ProniaOnion202.Infrastructure.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\bin\Debug\net6.0\ProniaOnion202.Infrastructure.pdb
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.AssemblyInfoInputs.cache
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.AssemblyInfo.cs
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\refint\ProniaOnion202.Infrastructure.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ProniaOnion202.Infrastructure.pdb
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Infrastructure\ProniaOnion202.Infrastructure\obj\Debug\net6.0\ref\ProniaOnion202.Infrastructure.dll

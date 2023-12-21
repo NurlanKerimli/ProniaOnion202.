@@ -1,0 +1,15 @@
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\bin\Debug\net6.0\ProniaOnion202.Application.deps.json
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\bin\Debug\net6.0\ProniaOnion202.Application.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\bin\Debug\net6.0\ProniaOnion202.Application.pdb
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\bin\Debug\net6.0\ProniaOnion202.Domain.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\bin\Debug\net6.0\ProniaOnion202.Domain.pdb
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.csproj.AssemblyReference.cache
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.AssemblyInfoInputs.cache
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.AssemblyInfo.cs
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.csproj.CoreCompileInputs.cache
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.csproj.CopyComplete
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\refint\ProniaOnion202.Application.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ProniaOnion202.Application.pdb
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Core\ProniaOnion202.Application\obj\Debug\net6.0\ref\ProniaOnion202.Application.dll
