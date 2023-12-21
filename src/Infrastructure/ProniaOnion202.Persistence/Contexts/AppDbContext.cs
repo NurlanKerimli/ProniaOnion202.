@@ -12,20 +12,39 @@ namespace ProniaOnion202.Persistence.Contexts
 {
     public class AppDbContext:DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext>options):base(options) 
-        {
-            
-        }
-        public DbSet<Category> Categories { get; set; }
+		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+		{
+		}
+		public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<ProductColor> ProductColors { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
+			modelBuilder.Entity<Category>().HasQueryFilter(c=>c.IsDeleted==false);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
 			base.OnModelCreating(modelBuilder);
+		}
+		public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+		{
+			var entities=ChangeTracker.Entries<Category>();
+			foreach(var data in entities)
+			{
+				switch (data.State)
+				{
+					case EntityState.Modified:
+						data.Entity.ModifiedAt=DateTime.Now;
+						break;
+					case EntityState.Added:
+						data.Entity.CreatedAt=DateTime.Now;
+						break;
+					default:
+						break;
+				}
+			}
+			return base.SaveChangesAsync(cancellationToken);
 		}
 	}
 }

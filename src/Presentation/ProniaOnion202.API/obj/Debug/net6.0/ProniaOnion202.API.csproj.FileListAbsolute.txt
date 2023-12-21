@@ -72,3 +72,5 @@ D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202
 D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Presentation\ProniaOnion202.API\obj\Debug\net6.0\ref\ProniaOnion202.API.dll
 D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Presentation\ProniaOnion202.API\bin\Debug\net6.0\Humanizer.dll
 D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Presentation\ProniaOnion202.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Presentation\ProniaOnion202.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Users\nurlan\Documents\CodeAcademy resources\Tasks\ProniaOnion\ProniaOnion202\src\Presentation\ProniaOnion202.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

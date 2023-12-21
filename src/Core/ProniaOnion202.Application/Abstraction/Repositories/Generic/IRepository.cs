@@ -10,11 +10,12 @@ namespace ProniaOnion202.Application.Abstraction.Repositories
 {
 	public interface IRepository<T> where T:BaseEntity, new()
 	{
-		IQueryable<T> GetAll(Expression<Func<T,bool>>? expression=null,Expression<Func<T,object>>? orderExpression=null, bool isDescending=false,int skip=0,int take=0,bool isTracking = false, params string[] includes);
+		IQueryable<T> GetAll(Expression<Func<T,bool>>? expression=null,Expression<Func<T,object>>? orderExpression=null, bool isDescending=false,int skip=0,int take=0,bool isTracking = false,bool ignoreQuery=false, params string[] includes);
 		Task<T> GetByIdAsync(int id);
 		Task AddAsync(T entity);
 		void Update (T entity);
 		void Delete(T entity);
+		void SoftDelete(T entity);
 		Task SaveChangeAsync();
 	}
 }
