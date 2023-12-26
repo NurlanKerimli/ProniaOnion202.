@@ -30,16 +30,7 @@ namespace ProniaOnion202.Persistence.Implementations.Services
 			ICollection<Category> categories = await _repository.GetAllWhere(skip: (page - 1) * take, take: take,ignoreQuery:true).ToListAsync();
 			return _mapper.Map<ICollection<CategoryItemDto>>(categories); 
 		}
-		//public async Task<GetCategoryDto> GetAsync(int id)
-		//{
-		//	Category category = await _repository.GetByIdAsync(id);
-		//	if (category is null) throw new Exception("Not Found.");
-		//	return new GetCategoryDto
-		//	{
-		//		Id = category.Id,
-		//		Name = category.Name,
-		//	};
-		//}
+		
 		public async Task Create(CategoryCreateDto dto)
 		{
 			

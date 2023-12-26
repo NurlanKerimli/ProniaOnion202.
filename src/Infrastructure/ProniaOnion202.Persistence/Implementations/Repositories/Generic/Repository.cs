@@ -48,10 +48,13 @@ namespace ProniaOnion202.Persistence.Implementations.Repositories
 			if (ignoreQuery) query = query.IgnoreQueryFilters();
 			return isTracking ? query : query.AsNoTracking();
 		}
-
+		public async Task<bool> IsExistAsync(Expression<Func<T,bool>> expression)
+		{
+			return await _table.AnyAsync(expression);
+		}
 		public async Task<T> GetByIdAsync(int id, bool isTraking = false, bool ignoreQuery = false, params string[] includes)
 		{
-			IQueryable query = _table.Where(x => x.Id == id);
+			IQueryable<T> query = _table.Where(x => x.Id == id);
 			if (ignoreQuery) query = query.IgnoreQueryFilters();
 			if (!isTraking) query = query.AsNoTracking();
 			
@@ -62,7 +65,7 @@ namespace ProniaOnion202.Persistence.Implementations.Repositories
 		public async Task<T> GetByExpressionAsync(Expression<Func<T, bool>> expression, bool isTraking = false, bool ignoreQuery = false, params string[] includes)
 		{
 
-			IQueryable query = _table.Where(expression);
+			IQueryable<T> query = _table.Where(expression);
 			if (ignoreQuery) query = query.IgnoreQueryFilters();
 			if (!isTraking) query = query.AsNoTracking();
 			
@@ -98,11 +101,11 @@ namespace ProniaOnion202.Persistence.Implementations.Repositories
 			await _context.SaveChangesAsync();
 		}
 
-		private IQueryable<T> addIncludes(IQueryable<T> query,params string[] includes)
+		private IQueryable<T> _addIncludes(IQueryable<T> query,params string[] includes)
 		{
 			if(includes is not null)
 			{
-				for(int i = 0; i < addIncludes().Length; i++)
+				for(int i = 0; i < includes.Length; i++)
 				{
 					query = query.Include(includes[i]);
 				}	

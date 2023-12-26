@@ -1,16 +1,17 @@
 ﻿using FluentValidation;
 using ProniaOnion202.Application.DTOs.Products;
+using ProniaOnion202.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProniaOnion202.Application.Validators
+namespace ProniaOnion202.Application.Validators.Product
 {
-	internal class ProductCreateValidator:AbstractValidator<ProductCreateDto>
-	{
-        public ProductCreateValidator()
+    public class ProductUpdateDtoValidator : AbstractValidator<ProductUpdateDto>
+    {
+        public ProductUpdateDtoValidator()
         {
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("Name is Important.")
@@ -19,16 +20,12 @@ namespace ProniaOnion202.Application.Validators
             RuleFor(x => x.SKU)
                 .NotEmpty()
                 .Must(s => s.Length == 6).WithMessage("SKU must contain only 6 characters");
-            RuleFor(x => x.Price).Must(CheckPrice);
-                //.LessThanOrEqualTo(999999.99m).GreaterThanOrEqualTo(10)
-        }
-        public bool CheckPrice(decimal price)
-        {
-            if (price >= 10 && price <= 999999.99m)
-            {
-                return true;
-            }
-            return false;
+            RuleFor(x => x.Price)
+                .Must(x => x >= 10 && x <= 999999.99m);
+            RuleFor(x => x.CategoryId)
+                .Must(c => c > 0);
+            RuleForEach(x => x.ColorIds)
+                .Must(c => c > 0);
         }
     }
 }
