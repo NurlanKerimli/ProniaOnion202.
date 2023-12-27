@@ -10,9 +10,9 @@ namespace ProniaOnion202.API.Controllers
 	[ApiController]
 	public class ColorsController : ControllerBase
 	{
-		private readonly IProductService _service;
+		private readonly IColorService _service;
 
-		public ColorsController(IProductService service)
+		public ColorsController(IColorService service)
 		{
 			_service = service;
 		}

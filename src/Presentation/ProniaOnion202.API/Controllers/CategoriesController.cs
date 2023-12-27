@@ -10,9 +10,9 @@ namespace ProniaOnion202.API.Controllers
 	[ApiController]
 	public class CategoriesController : ControllerBase
 	{
-		private readonly IProductService _service;
+		private readonly ICategoryService _service;
 
-		public CategoriesController(IProductService service)
+		public CategoriesController(ICategoryService service)
 		{
 			_service = service;
 		}

@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProniaOnion202.Application.Abstraction.Repositories;
 using ProniaOnion202.Application.Abstraction.Services;
+using ProniaOnion202.Domain.Entities;
 using ProniaOnion202.Persistence.Contexts;
 using ProniaOnion202.Persistence.Implementations.Repositories;
 using ProniaOnion202.Persistence.Implementations.Services;
@@ -21,6 +23,15 @@ namespace ProniaOnion202.Persistence.ServiceRegistration
 		{
 			services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("Default"),
 				b=>b.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName)));
+			services.AddIdentity<AppUser, IdentityRole>(opt =>
+			{
+				opt.Password.RequireNonAlphanumeric = false;
+				opt.Password.RequiredLength = 8;
+				opt.User.RequireUniqueEmail = true;
+				opt.Lockout.MaxFailedAccessAttempts = 3;
+				opt.Lockout.DefaultLockoutTimeSpan=TimeSpan.FromMinutes(3);
+				opt.Lockout.AllowedForNewUsers = true;
+			}).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 
 			services.AddScoped<ICategoryRepository, CategoryRepository>();
 			services.AddScoped<IProductRepository, ProductRepository>();
@@ -28,6 +39,8 @@ namespace ProniaOnion202.Persistence.ServiceRegistration
 
 			services.AddScoped<ICategoryService, CategoryService>();
 			services.AddScoped<IProductService, ProductService>();
+			services.AddScoped<IAuthenticationService, AuthenticationService>();
+
 			return services;
 		}
 	}

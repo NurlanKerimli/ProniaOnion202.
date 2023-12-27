@@ -16,10 +16,8 @@ namespace ProniaOnion202.Application.Abstraction.Services
 		Task CreateAsync(ProductCreateDto dto);
 		Task UpdateAsync(int id,ProductUpdateDto dto);
 		Task DeleteAsync(int id);
-		Task CreateAsync(CategoryCreateDto dto);
-		Task UpdateAsync(int id, CategoryUpdateDto dto);
+		
 
-		Task CreateAsync(ColorCreateDto dto);
-		Task UpdateAsync(int id, ColorUpdateDto dto);
+		
 	}
 }

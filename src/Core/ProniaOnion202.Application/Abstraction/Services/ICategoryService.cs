@@ -1,4 +1,5 @@
 ﻿using ProniaOnion202.Application.DTOs.Categories;
+using ProniaOnion202.Application.DTOs.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,11 @@ namespace ProniaOnion202.Application.Abstraction.Services
 {
 	public interface ICategoryService
 	{
-		Task<ICollection<CategoryItemDto>> GetAllAsync(int page, int take);
-		//Task<GetCategoryDto> GetAsync(int id);
-		Task Create(CategoryCreateDto dto);
-		Task Update(int id, CategoryUpdateDto dto);
+		Task<IEnumerable<CategoryItemDto>> GetAllAsync(int page, int take);
+		Task<CategoryGetDto> GetByIdAsync(int id);
+		Task CreateAsync(CategoryCreateDto dto);
+		Task UpdateAsync(int id, CategoryUpdateDto dto);
+		Task DeleteAsync(int id);
 		Task SoftDeleteAsync(int id);
 	}
 }
