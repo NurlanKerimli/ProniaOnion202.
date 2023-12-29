@@ -4,14 +4,103 @@
     "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {
+    "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\ProniaOnion202.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
-        "projectName": "ProniaOnion202.Infrastructure",
-        "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\ProniaOnion202.Application.csproj",
+        "projectName": "ProniaOnion202.Application",
+        "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\ProniaOnion202.Application.csproj",
         "packagesPath": "C:\\Users\\nurlan\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\obj\\",
+        "outputPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nurlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\ProniaOnion202.Domain.csproj": {
+                "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\ProniaOnion202.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Collection.EntityFramework": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\ProniaOnion202.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\ProniaOnion202.Domain.csproj",
+        "projectName": "ProniaOnion202.Domain",
+        "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\ProniaOnion202.Domain.csproj",
+        "packagesPath": "C:\\Users\\nurlan\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +132,81 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
+        "projectName": "ProniaOnion202.Infrastructure",
+        "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\ProniaOnion202.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\nurlan\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Infrastructure\\ProniaOnion202.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nurlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\ProniaOnion202.Application.csproj": {
+                "projectPath": "D:\\Users\\nurlan\\Documents\\CodeAcademy resources\\Tasks\\ProniaOnion\\ProniaOnion202\\src\\Core\\ProniaOnion202.Application\\ProniaOnion202.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
